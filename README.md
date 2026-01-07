@@ -35,16 +35,18 @@ hello, world
 ## GDB
 left is release  
 right is debug
+
 <img width="2048" height="538" alt="image" src="https://github.com/user-attachments/assets/a07642ae-8cf3-4ccd-bf95-ad3f4cba1fea" />
 
+
 Question:
-Why is this being optimized out?
+Why is this being optimized
 ``` rust
         std::panic::catch_unwind(core::panic::AssertUnwindSafe(|| {
-            cpp_throw
+            cpp_throw();
         }));
 ```
-to 
+to  
 ```
-cpp_throw
+cpp_throw();
 ```
