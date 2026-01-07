@@ -20,7 +20,7 @@ aarnav@plannine ~/a/asdf (master) [SIGABRT]> ./release
 hello, world
 ```
 ## aborting panic
-```
+``` bash
 RUSTFLAGS="-C panic=abort" ./build.sh
 
 aarnav@plannine ~/a/asdf (master)> ./debug 
