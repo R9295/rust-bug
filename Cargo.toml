@@ -8,11 +8,9 @@ crate-type = ["staticlib"]
 
 [profile.release]
 debug = 1
-panic = "abort"
 strip = "none" # Prevents Cargo from stripping anything (use with caution)
 
 [profile.dev]
-panic = "abort"
 strip = "none" # Prevents Cargo from stripping anything (use with caution)
 
 [dependencies]
